@@ -3,6 +3,7 @@ package com.hr.c2c.social.govern.report.controller;
 import com.hr.c2c.social.govern.reviewer.api.ReviewerService;
 import com.hr.c2c.social.govern.reward.api.RewardService;
 import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -28,4 +29,14 @@ public class ReportController {
             cluster = "failfast"
     )
     private RewardService rewardService;
+
+    @GetMapping("testReviewer")
+    public String testReviewer(String str) {
+        return reviewerService.reviewerTest(str);
+    }
+
+    @GetMapping("testReward")
+    public String testReward(String str) {
+        return rewardService.rewardTest(str);
+    }
 }

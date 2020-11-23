@@ -17,4 +17,9 @@ import org.apache.dubbo.config.annotation.Service;
         loadbalance = "roundrobin"
 )
 public class ReviewerServiceImpl implements ReviewerService{
+
+    @Override
+    public String reviewerTest(String str) {
+        return "reviewer test:\n\thello " + str;
+    }
 }

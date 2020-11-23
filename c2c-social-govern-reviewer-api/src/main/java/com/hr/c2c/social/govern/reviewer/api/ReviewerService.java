@@ -8,4 +8,11 @@ package com.hr.c2c.social.govern.reviewer.api;
  **/
 
 public interface ReviewerService {
+
+    /**
+     * ²âÊÔ
+     * @param str ²âÊÔ×Ö·û´®
+     * @return ²âÊÔ
+     */
+    String reviewerTest(String str);
 }

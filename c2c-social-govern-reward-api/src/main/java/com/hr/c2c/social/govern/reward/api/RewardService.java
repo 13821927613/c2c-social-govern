@@ -8,4 +8,11 @@ package com.hr.c2c.social.govern.reward.api;
  **/
 
 public interface RewardService {
+
+    /**
+     * ²âÊÔ
+     * @param str ²âÊÔ×Ö·û´®
+     * @return ²âÊÔ
+     */
+    String rewardTest(String str);
 }

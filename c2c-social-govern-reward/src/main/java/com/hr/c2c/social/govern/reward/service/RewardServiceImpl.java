@@ -17,4 +17,9 @@ import org.apache.dubbo.config.annotation.Service;
         loadbalance = "roundrobin"
 )
 public class RewardServiceImpl implements RewardService {
+
+    @Override
+    public String rewardTest(String str) {
+        return "reward test:\n\thello " + str;
+    }
 }
