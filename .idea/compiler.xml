@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="c2c-social-govern-report" />
         <module name="c2c-social-govern-reward" />
+        <module name="c2c-social-govern-report" />
         <module name="c2c-social-govern-reward-api" />
         <module name="c2c-social-govern-reviewer-api" />
         <module name="c2c-social-govern-reviewer" />
